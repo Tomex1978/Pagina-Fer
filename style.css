@@ -1,0 +1,374 @@
+* {
+    box-sizing: border-box;
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.cont-header {
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+    header {
+        max-width: 1100px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+
+        .logo a {
+            font-size: 36px;
+            color: #1cb698;
+            text-decoration: none;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+
+            a {
+                text-align: none;
+                color: #fff;
+                margin: 0 15px;
+                padding: 3px;
+                transition: .5s;
+                text-decoration: none;
+                text-align: center;
+            }
+
+            a:hover {
+                color: #1cb698;
+            }
+        }
+
+    }
+
+}
+
+
+.inicio {
+    background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)),
+        url(imagenes/algo.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-banner {
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.contenido-banner img {
+    margin-top: 30px;
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+.contenido-banner h1 {
+    margin-top: 40px;
+    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contenido-banner h2 {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.contenido-banner .redes a {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.contenido-banner .redes a:hover {
+    background-color: #1CB698;
+}
+
+.redes {
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+
+        img {
+            width: 90%;
+            margin-top: 0%;
+            border: none;
+            border-radius: 0%;
+        }
+    }
+}
+.sobremi {
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+    display: flex;
+    justify-items: center;
+}
+
+.cont-section {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sobremi h2 {
+    font-size: 48px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sobremi .cont-section p {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+
+.curriculum {
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+
+    h2 {
+        font-size: 48px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .contenido-seccion {
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    .fila {
+        display: flex;
+        justify-content: space-between;
+
+        .col {
+            width: 49%;
+            padding: 0 20px;
+
+            h3 {
+                font-size: 28px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+
+.izquierda {
+    border-right: 2px solid #252A2E;
+}
+
+.derecha {
+    border-left: 2px solid #252A2E;
+}
+
+.item {
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #252A2E;
+    position: relative;
+
+    h4 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .casa {
+        color: #1CB698;
+        font-size: 22px;
+        font-weight: bold;
+        display: block;
+    }
+
+    .fecha {
+        display: block;
+        color: #1CB698;
+        margin-bottom: 10px;
+    }
+
+    p {
+        line-height: 24px;
+    }
+
+    .conectori {
+        height: 2px;
+        background-color: #1CB698;
+        width: 47px;
+        position: absolute;
+        top: 50%;
+        right: -47px;
+        z-index: 5;
+
+        .circuloi {
+            display: block;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            background-color: #1CB698;
+            float: right;
+            position: relative;
+            bottom: 4px;
+        }
+    }
+
+    .conectord {
+        height: 2px;
+        background-color: #1CB698;
+        width: 47px;
+        position: absolute;
+        top: 50%;
+        left: -47px;
+        z-index: 5;
+
+        .circulod {
+            display: block;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            background-color: #1CB698;
+            float: left;
+            position: relative;
+            bottom: 4px;
+        }
+    }
+
+}
+
+.izq {
+    border-right: 2px solid #1CB698;
+    margin-right: 20px;
+}
+
+.der {
+    border-left: 2px solid #1CB698;
+    margin-left: 20px;
+}
+
+.foot {
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+
+    .redes {
+        margin-bottom: 20px;
+    }
+
+    .redes a {
+        color: #fff;
+        display: inline-block;
+        text-decoration: none;
+        border-radius: 100%;
+        width: 42px;
+        height: 42px;
+        line-height: 42px;
+        margin: 30px 5px;
+        font-size: 20px;
+        transition: .3s;
+    }
+
+    a:hover {
+        background-color: #1CB698;
+    }
+
+    .arriba {
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-color: #1CB698;
+        color: #fff;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -25px;
+        border-radius: 50%;
+        line-height: 50px;
+        font-size: 18px;
+    }
+
+    .firstDiv {
+        display: flex;
+
+        .textos {
+            width: 90%;
+            margin: 20px;
+        }
+
+        .te1 {
+            text-align: left;
+            color: #fff;
+            font-size: 25px;
+        }
+
+        .te2 {
+            text-align: left;
+            color: #fff;
+            font-size: 15px;
+        }
+
+        .te {
+            text-align: end;
+            color: #fff;
+            font-size: 15px;
+
+            .ultimo {
+                text-decoration: none;
+                color: #1CB698;
+            }
+
+            .ultimo:hover {
+                background-color: #252A2E;
+            }
+        }
+    }
+}
+
+/* Seccion Responsive */
+@media screen and (max-width:700px) {
+    nav {
+        font-size: 11px;
+    }
+    .curriculum {
+        .fila {
+            display: block;
+
+            .derecha {
+                margin-left: 20px;
+            }
+
+            .col {
+                width: 90%;
+            }
+        }
+    }
+}
